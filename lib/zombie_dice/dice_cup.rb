@@ -1,12 +1,12 @@
 class DiceCup
   def initialize
     @dice = []
-    
+
     6.times { @dice.push(:green_die) }
     4.times { @dice.push(:yellow_die) }
     3.times { @dice.push(:red_die) }
-    
-    @dice.shuffle! 
+
+    @dice.shuffle!
   end
 
   def grab_dice
@@ -17,7 +17,5 @@ class DiceCup
     grabbed_dice
   end
 
-  def dice
-    @dice
-  end
+  attr_reader :dice
 end

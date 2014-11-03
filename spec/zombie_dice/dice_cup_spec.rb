@@ -10,7 +10,7 @@ describe DiceCup do
     it 'should have 6 green dice' do
       expect(@cup.dice.count(:green_die)).to eq(6)
     end
-    
+
     it 'should have 4 yellow dice' do
       expect(@cup.dice.count(:yellow_die)).to eq(4)
     end
@@ -32,8 +32,8 @@ describe DiceCup do
     it 'should return an array of three dice' do
       expect(@grabbed_dice).to be_a(Array)
       expect(@grabbed_dice.length).to eq(3)
-      
-      @grabbed_dice.each do |die| 
+
+      @grabbed_dice.each do |die|
 	expect(die).to eq(:green_die).or eq(:yellow_die).or eq(:red_die)
       end
     end
@@ -42,9 +42,9 @@ describe DiceCup do
       cup = DiceCup.new
       original_dice = cup.dice.dup
       grabbed_dice = cup.grab_dice
-      
+
       expect(original_dice.length).to eq(grabbed_dice.length + cup.dice.length)
-      
+
       expect(original_dice.count(:green_die)).to eq(grabbed_dice.count(:green_die) + cup.dice.count(:green_die))
       expect(original_dice.count(:yellow_die)).to eq(grabbed_dice.count(:yellow_die) + cup.dice.count(:yellow_die))
       expect(original_dice.count(:red_die)).to eq(grabbed_dice.count(:red_die) + cup.dice.count(:red_die))
