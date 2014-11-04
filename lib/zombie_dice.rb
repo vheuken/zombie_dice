@@ -3,7 +3,7 @@ require 'zombie_dice/version'
 module ZombieDice
   def roll_die(die)
     roll = Kernel.rand(6)
-    puts die
+
     if die == :green_die
       if roll.between?(0, 2)
         return :brain
