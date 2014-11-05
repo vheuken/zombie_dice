@@ -2,20 +2,25 @@ require 'spec_helper'
 require 'zombie_dice'
 
 describe ZombieDice do
-  include ZombieDice
+  before(:all) do
+    @zombie_dice = ZombieDice::Game.new
+  end
 
   describe '#start_game' do
     it 'initializes list of players' do
-      start_game
+      @zombie_dice.start_game
 
-      expect(@players).to be_a(Array)
-      expect(@players.count).to eq(0)
+      expect(@zombie_dice.players).to be_a(Array)
+      expect(@zombie_dice.players.count).to eq(0)
     end
   end
 
   describe '#add_player' do
     it 'adds player to list' do
-      add_player("Name")
+      player_name = 'Player1'
+      @zombie_dice.add_player(player_name)
+
+      @zombie_dice.players.select { |player| player.name == player_name }
     end
   end
 
@@ -26,7 +31,7 @@ describe ZombieDice do
         6.times do |i|
           allow(Kernel).to receive(:rand).and_return(i)
 
-          returned_values.push roll_die(color)
+          returned_values.push @zombie_dice.roll_die(color)
         end
 
         num_of_expected_returns = 0
