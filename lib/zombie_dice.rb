@@ -1,4 +1,5 @@
 require 'zombie_dice/version'
+require 'zombie_dice/dice_cup'
 
 module ZombieDice
   def roll_die(die)
