@@ -1,7 +1,14 @@
 require 'zombie_dice/version'
 require 'zombie_dice/dice_cup'
-
 module ZombieDice
+  def start_game
+    @players = []
+  end
+
+  def add_player(name)
+
+  end
+
   def roll_die(die)
     roll = Kernel.rand(6)
 

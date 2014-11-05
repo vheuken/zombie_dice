@@ -4,6 +4,21 @@ require 'zombie_dice'
 describe ZombieDice do
   include ZombieDice
 
+  describe '#start_game' do
+    it 'initializes list of players' do
+      start_game
+
+      expect(@players).to be_a(Array)
+      expect(@players.count).to eq(0)
+    end
+  end
+
+  describe '#add_player' do
+    it 'adds player to list' do
+      add_player("Name")
+    end
+  end
+
   describe '#roll_die' do
     def die_roll_helper(color, expected_return_value, expected_num_of_return)
         returned_values = []
