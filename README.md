@@ -1,5 +1,7 @@
 # ZombieDice
 
+[![Build Status](https://travis-ci.org/vheuken/zombie_dice.svg?branch=master)](https://travis-ci.org/vheuken/zombie_dice)
+
 TODO: Write a gem description
 
 ## Installation
