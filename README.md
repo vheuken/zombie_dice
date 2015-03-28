@@ -2,8 +2,7 @@
 
 [![Build Status](https://travis-ci.org/vheuken/zombie_dice.svg?branch=master)](https://travis-ci.org/vheuken/zombie_dice)
 
-TODO: Write a gem description
-
+Game logic for the game [Zombie Dice](http://www.sjgames.com/dice/zombiedice/)
 ## Installation
 
 Add this line to your application's Gemfile:
