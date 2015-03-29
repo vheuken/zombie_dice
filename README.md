@@ -1,6 +1,8 @@
 # ZombieDice
 
 [![Build Status](https://travis-ci.org/vheuken/zombie_dice.svg?branch=master)](https://travis-ci.org/vheuken/zombie_dice)
+[![Code Climate](https://codeclimate.com/github/vheuken/zombie_dice/badges/gpa.svg)](https://codeclimate.com/github/vheuken/zombie_dice)
+[![Test Coverage](https://codeclimate.com/github/vheuken/zombie_dice/badges/coverage.svg)](https://codeclimate.com/github/vheuken/zombie_dice)
 
 Game logic for the game [Zombie Dice](http://www.sjgames.com/dice/zombiedice/)
 ## Installation
