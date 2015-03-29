@@ -7,7 +7,7 @@ describe ZombieDice do
   end
 
   describe '#new' do
-    it 'initializes list of players to empty array' do
+    it 'initializes list of players' do
       zombie_dice = ZombieDice::Game.new
 
       expect(zombie_dice.players).to be_a(Array)
