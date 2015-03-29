@@ -6,6 +6,15 @@ describe ZombieDice do
     @zombie_dice = ZombieDice::Game.new
   end
 
+  describe '#new' do
+    it 'initializes list of players to empty array' do
+      zombie_dice = ZombieDice::Game.new
+
+      expect(zombie_dice.players).to be_a(Array)
+      expect(zombie_dice.players.count).to eq(0)
+    end
+  end
+
   describe '#start_game' do
     it 'initializes list of players' do
       @zombie_dice.start_game

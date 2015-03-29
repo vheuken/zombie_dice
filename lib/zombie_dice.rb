@@ -6,6 +6,10 @@ module ZombieDice
   class Game
     attr_reader :players
 
+    def initialize
+      start_game
+    end
+
     def start_game
       @players = []
     end
