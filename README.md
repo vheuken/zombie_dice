@@ -25,6 +25,10 @@ Or install it yourself as:
 
 TODO: Write usage instructions here
 
+## Development
+
+After checking out the repo, run `bin/setup` to install dependencies. Then, run `bin/console` for an interactive prompt that will allow you to experiment.
+
 ## Contributing
 
 1. Fork it ( https://github.com/[my-github-username]/zombie_dice/fork )
