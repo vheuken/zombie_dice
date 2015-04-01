@@ -17,3 +17,6 @@ loop do
     break if response == 'n'
   end
 end
+
+
+zombie_dice.players.each_with_index { |name, i| puts "Player#{i+1}: #{name.name}" }
