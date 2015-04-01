@@ -4,3 +4,16 @@ require 'bundler/setup'
 require 'zombie_dice'
 
 zombie_dice = ZombieDice::Game.new
+
+loop do
+  print "Enter player name: "
+  player = gets.chomp
+
+  zombie_dice.add_player(player)
+
+  if zombie_dice.players.count > 1
+    print "Add more players? (y/n) "
+    response = gets.chomp
+    break if response == 'n'
+  end
+end
