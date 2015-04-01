@@ -19,4 +19,4 @@ loop do
 end
 
 
-zombie_dice.players.each_with_index { |name, i| puts "Player#{i+1}: #{name.name}" }
+zombie_dice.players.each_with_index { |player, i| puts "Player#{i+1}: #{player.name}" }
